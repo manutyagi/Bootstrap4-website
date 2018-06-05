@@ -54,7 +54,7 @@ ul.unstyled {
    Navbar
    -------------------------------------- */
 .navbar{
-   background-color: #000f2d;
+   background-color: black;
    height: 40px;
 }
 #searchInput {
