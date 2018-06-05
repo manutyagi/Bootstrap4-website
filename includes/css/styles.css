@@ -31,12 +31,25 @@ footer {
    font-size: 11px;
    padding: 20px;
 }
+.fa {
+ padding: 0px;
+ font-size: 10px;
+ width: 20px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 2px;
+}
+fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
 /* --------------------------------------
    Typography
    -------------------------------------- */
 body {
    -webkit-font-smoothing :antialiased;
    text-rendering: optimizeLegibility;
+   font-family: 'Acme', sans-serif;
 }
 .well .page-header {
    margin-top: 0;
@@ -54,15 +67,16 @@ ul.unstyled {
    Navbar
    -------------------------------------- */
 .navbar{
-   background-color: black;
-   height: 40px;
+   background-color: white ;
+   min-height: 40px;
 }
 #searchInput {
    width: 200px;
 }
 .navbar-brand {
-   padding: 13px 15px
+   padding: 0;
 }
+
 /*
 .navbar li.active ,li.dropdown{
    padding-top: 50px;
@@ -144,12 +158,24 @@ ul.unstyled {
 .thumbnail span.glyphicon {
    margin-right: 5px;
 }
+
+.well h1{
+   font-size: 40px;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Lobster', cursive;
+}
+
+#featuresHeading {
+   margin-top: -30px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+
    .thumbnail .price {
       font-size: 14px;
    }
