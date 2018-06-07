@@ -1,371 +1,206 @@
-<!DOCTYPE html>
+`		<!DOCTYPE html>
 
-<html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title>Himachal Tourism</title>
-		<meta name="description" content="Welcome to Himachal tourism official website.">
-		<meta name="keywords" content="tourism,himachal">
-		<meta name="author" content="manu tyagi">
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- Include Modernizr in the head, before any other Javascript -->
-	<!--	<script src="includes/js/modernizr-2.6.2.min.js"></script> -->
-		
-	</head>
-	<body>
-	
-		<div class="container">
-			<div class="navbar navbar-fixed-top">
-				<div class="container">
-				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/"><img src="images/him-logo.png" alt="Himachal Pradesh Tourism"></a>
-				<div class="nav-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>							
-						</li>					
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plan your visit<strong class="caret"></strong></a>	
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Hotel Booking</a>
-								</li>
-								<li>
-									<a href="#">Bus Booking</a>
-								</li>
-								<li>
-									<a href="#">Cuisines</a>
-								</li>								
-								<li class="divider"></li>
-								<li class="dropdown-header">Events</li>
-								<li>
-									<a href="#">Photography contests</a>
-								</li>
-								<li>
-									<a href="#">Mountain Fests</a>
-								</li>
-							</ul> <!-- end dropdown-menu -->						
-						</li><!-- end dropdown -->
-					</ul> <!-- end nav -->
-
-					<form class="navbar-form pull-left">
-						<input type="text" class="form-control" placeholder="Enter destination or hotel.." id="searchInput">
-						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button> 	
-					</form> <!-- end navbar-form -->
-
-					<ul class="nav navbar-nav pull-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Select Language<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#"></span>Hindi</a>
-								</li>
-								<li>
-									<a href="#"></span>English</a>
-								</li>
-								<li>
-									<a href="#"></span>Marathi</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a>
-								</li>
-							</ul>
-						</li>
-					</ul> <!-- end nav pull-right -->
-				</div> <!-- end nav-collapse -->	
-				</div> <!-- end container -->
-			</div><!-- end of navbar -->
-
-
-			<div class="carousel slide" id="myCarousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-					<li data-slide-to="1" data-target="#myCarousel"></li>
-					<li data-slide-to="2" data-target="#myCarousel"></li>
-				</ol>
-				<!-- Wrapper for slided -->
-				<div class="carousel-inner">
-					<div class="item active" id="slide1">
-						<div class="carousel-caption">
-							<h4>Welcome to Himachal Pradesh</h4>
-							<p>Breathe fresh under clear skies..!</p>
-						</div> <!-- end carousel-caption -->
-					</div> <!-- end item --> 
-
-					<div class="item" id="slide2">
-						<div class="carousel-caption">
-							<p>Himachal for all seasons and all reasons.</p>
-						</div> <!-- end carousel-caption -->
-					</div> <!-- end item --> 
-
-					<div class="item" id="slide3">
-						<div class="carousel-caption">
-							<p>Himachal-A journey in harmony with nature.</p>
-						</div> <!-- end carousel-caption -->
-					</div> <!-- end item --> 
-				</div> <!-- carousel-inner -->
+		<html>
+			<head>
 				
-				<!-- Controls -->
-				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-			</div><!-- end myCarousel -->
+				<!-- Website Title & Description for Search Engine purposes -->
+				<title>Himachal tourism </title>
+				<meta name="description" content="Welcome to Himachal tourism official website.">
+				<meta name="keywords" content="tourism,himachal">
+				<meta name="author" content="manu tyagi">
+				<!-- Mobile viewport optimized -->
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+				
+				<!-- Bootstrap CSS -->
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+				
 
-			<main class="row jumbotron" id="bigCallout">
-				<div class="col-12">
-					<div class="alert alert-failure alert-block fade in" id="successAlert">
-						<button type="button" class="close" data-dismiss="alert">&times;</button>	
-						<h4>Failure!</h4>
-						<p>The website is currently under maintenance.Kindly try after sometime.</p>
-					</div> <!-- end alert -->
-					<!-- Visible only on small devices -->
-					<div class="well well-small visible-sm" >
-						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone">Give us a call</span></a>	
-					</div> <!-- end well-small -->					
-					<div class="well">
-						<div class="page-header">
-							<h1>Interesting Geographic Circuits-Tour Packages <small>Himachal Pradesh Tourism Development Corporation has divided the state into four interesting circuits. These circuits pass through different terrains making one feel as if one is trekking through ages at different times.</small></h1>
-						</div> <!-- end page header -->
-						<p class="lead">1)Barog - Chail - Shimla - Naldehra - Narkanda - Sarahan <br> 
-						2)Dharamshala - Palampur - Dalhousie - Khajjiar - Chamba  <br>3)Kullu - Manali - Naggar - Mandi - Rewalsar <br> 4)Kalpa - Kaza - Keylong</p>
-						<a href="" class="btn btn-large btn-primary" id="alertMe">Click here to explore</a>
-						<a href="" class="btn btn-large btn-link">Nearest drop stations </a>
-					</div> <!-- end well -->
-				</div> <!-- end col-12 -->
-			</main> <!-- end of bigCallout -->
-
-			<div class="row" id="featuresHeading">
-				<div class="col-12">
-					<h2>Hotels</h2>
-					<p class="lead">Himachal Pradesh is known for its hospitality and some best hotels are situated on the way from New Delhi to Shimla and beyond at most convenient distances and affordable rates.</p>
-				</div> <!-- end col-12 -->
-			</div> <!--	end featuresHeading -->
-
-			<div class="row" id="features">
-				<section class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">The Palace ,Chail</h3>
-						</div> <!-- end panel-heading -->
-						<img src="images/the-palace-chail.jpg" alt="HTML5" class="img-circle">
-						<p>Built in 1891, the Maharaja’s palace is set in approximately 75 acres and has a truly regal setting with spectacular views. A wide variety of cottages, suites and rooms with different tariffs can accommodate every visitor who wish to savor this majestic hill station.One of the best places to stay and enjoy the scenic beauty of the himalayas.</p>
-						<a href="" target="_blank" class="btn btn-warning btn-block">Book</a>
-					</div> <!-- end panel -->
-				</section> <!-- end feature -->
-
-				<section class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">The Tea Bud ,Palampur</h3>
-						</div> <!-- end panel-heading -->
-						<img src="images/the-tea-bud-palampur.jpg" alt="CSS3" class="img-circle">
-						<p>The appropriately named hotel, The Tea Bud is run by Himachal Tourism at Palampur. In the finest part of town, with lush tea gardens just opposite, is the hotel. It has deodar and pine trees, the red-brick building is a heaven for those who seek solitude and privacy.One of the best hotels in the north awaits your presence.</p>
-						<a href="" target="_blank" class="btn btn-danger btn-block">Book</a>
-					</div> <!-- end panel -->
-				</section> <!-- end feature -->
-
-				<section class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">The Castle ,Naggar</h3>
-						</div> <!-- end panel-heading -->
-						<img src="images/the-castle-naggar.jpg" alt="Bootstrap3" class="img-circle">
-						<p>The Castle was converted into a rest house, a hundred year back and in 1978 this ancient building was handed over to HPTDC. This medieval Castle was built by Raja Sidh Singh of Kullu around 1460 A.D. The hotel overlooks the Kullu Valley and has a flavour of authentic western Himalayan architecture.</p>
-						<a href="" target="_blank" class="btn btn-info btn-block">Book</a>
-					</div> <!-- end panel -->
-				</section> <!-- end feature -->
-			</div> <!-- end features -->
-
-			<div class="row" id="moreInfo">
-				<div class="col-sm-12">
-					<h3>Himachal Pradesh Tourism Development Corporation</h3>
-					<div class="tabbable">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane active">
-								<h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small>You can visit us here</small></h4>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.6603808847153!2d78.24645281515092!3d31.533486481365166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39066a2cb914c9cd%3A0xcba6c1c9cec6850c!2sHPTDC+Guest+House!5e0!3m2!1sen!2sin!4v1528143461407" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>								
-								<p>Tourism in Himachal Pradesh relates to tourism in the Indian state of Himachal Pradesh. Himachal Pradesh is famous for its Himalayan landscapes and popular hill-stations. Many outdoor activities such as rock climbing, mountain biking, paragliding, ice-skating, and heli-skiing are popular tourist attractions in Himachal Pradesh.</p>
-								<p>
-								Shimla, the state capital, is very popular among tourists. The Kalka-Shimla Railway is a mountain railway which is a UNESCO World Heritage Site.[2] Shimla is also a famous skiing attraction in India. Other popular hill stations include Manali and Kasauli.Dharamshala, home of the Dalai Lama, is known for its Tibetan monasteries and Buddhist temples. Many trekking expeditions also begin here.The Ridge is a large road in Shimla which is the centre of most cultural activities of Shimla.</p>
-							</div> <!-- end tab-pane -->
-
-							<div class="tab-pane">
-								<h4>Trance fest<small>Kasol,Tosh and Malana</small></h4>
-								<img src="http://placehold.it/140" class="thumbnail pull-left">
-								<p>Psytrance festivals in Kasol are either the best experience you have ever had or something you would just rather not talk about. Space Trip 2016 was safely in the former category as it kicked off amidst beautiful weather up in Parvati Valley, Himachal Pradesh.</p>
-								<p>
-								In case you’re wondering how much truth that statement holds, we have compiled pictures that perfectly sum up what the festival was all about. Have a look!
-								Only in a place like Kasol can you have a lively spring so close to the festival. Why aren’t we having more festivals here?</p>
-
-								<hr>
-
-								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click to register for the festival</a>
-								<div class="modal fade" id="myModal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button class="close" data-dismiss="modal">&times;</button>
-												<h4 class="modal-title">Parvati Valley Music Festival</h4>
-											</div> <!-- end modal header -->
-											<div class="modal-body">
-												<h3>Registration</h3>
-												<p>Please enter the following information true to your knowledge and click on the send button.</p>					
-												<h4>Required Documents</h4>
-												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="JPEG format" data-content="Other formats">upload photo</a>
-												<h4>Help Desk</h4>
-												<a href="" data-original-title="Tooltip" rel="tooltip">Click here </a>for help in uploading the documents and  <a href="" data-original-title="Wohoo!" rel="tooltip">here</a> for other FAQs
-
-												<hr>
-
-												<p><small class="text-muted">Please fill in the name as per aadhar card or passport.</small></p>
-
-												<form class="form-horizontal">
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputName">Name</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputName" placeholder="Name" type="text">
-														</div>
-													</div>
-
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
-														</div>
-													</div>	
-
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
-														<div class="col-lg-10">
-															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-															<button class="btn btn-success pull-right" type="submit">Send!</button>
-														</div>
-													</div>													
-												</form>												
-												</div> <!-- end modal-body -->
-												<div class="modal-footer">
-													<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
-												</div> <!-- end modal-body -->
-										</div> <!-- end modal-content -->
-									</div> <!-- end modal-dialog -->
-								</div> <!-- end myModal -->
-							</div> <!-- end tab-pane -->
-						</div> <!-- end tab-content -->
-					</div> <!-- end tabbable --> 
-				</div> <!-- end col-sm-12 -->
-			</div> <!-- end moreInfo -->
-
-			<hr>
+				<!-- Custom CSS -->
+				<link href="includes/css/styles.css" rel="stylesheet">
+				 <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+				 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<!-- Include Modernizr in the head, before any other Javascript -->
+				<script src="includes/js/modernizr-2.6.2.min.js"></script>
+				
+			</head>
+			<body>
 			
-			<div>
-				<div class="col-12">
-					<h3>Famous festivals of Himachal Pradesh</h3>
-					<div class="thumbnails row">
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/kullu-dussehra.jpg" alt="PSD to HTML5 and CSS3">
-								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span>Know more</div>
-								<div class="caption">
-									<h3>Kullu Dussehra</h3>
-									<p>Kullu Dussehra is the renowned International Mega Dussehra festival observed in the month of October in Himachal Pradesh state in northern India. Wherein more than 4-5 lac people visits the fair from all across the Globe. It is celebrated in the Dhalpur maidan in the Kullu valley. Dussehra at Kullu commences on the tenth day of the rising moon, i.e. on 'Vijay Dashmi' day itself and continues for seven days. Its history dates back to the 17th century when local King Jagat Singh installed an idol of Raghunath on his throne as a mark of penance. After this, god Raghunath was declared as the ruling deity of the Valley. </p>						
-									<p><a href="#" class="btn btn-primary btn-small" target="_blank">Photo Gallery</a> <a href="#" class="btn btn-small btn-link">Visit</a></p>
-								</div> <!-- end caption --> 
-							</div> <!-- end thumbnail -->
-						</div> <!--end col-6 -->
+		    
+ 
+	<div class="container">
+	 <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+       <div class="container">
+    	     <a class="navbar-brand" href="#">
+         		<img src="images/him-logo.png" alt="logo" id="logo">
+        	 </a>
+          	 <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Home</a>
 
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/himalayan-fest.jpg" alt="PSD to HTML5 and CSS3">
-								<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span>Know more</div>
-								<div class="caption">
-									<h3>International Himalayan Festival</h3>
-									<p>
-									Himalayan Blues Festival Genre	Blues, Nepali rock with blues flavor
-									Dates	Around September–November Location(s)	Kathmandu, Nepal
-									Years active	2007–2014 Website				http://www.himalayanblues.com Himalayan Blues Festival is an annual international music festival showcasing live performances followed by cultural events. Since its inception in 2007, The Himalayan Blues Festival has featured a diverse range of blues artist from around the globe and has helped introduce blues music in Nepal and the region.In its recent incarnation the festival has expanded to other cities in South Asia.</p>	
-									<p><a href="#" class="btn btn-primary btn-small" target="_blank">Photo Gallery</a> <a href="#" class="btn btn-small btn-link">Visit</a></p>
-								</div> <!-- end caption --> 
-							</div> <!-- end thumbnail -->
-						</div> <!--end col-6 -->
-					</div> <!-- end row -->
-				</div> <!-- end col-12 -->
-			</div>	<!-- end moreCourses -->
-		</div><!-- end container -->
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Events</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plan your visit</a>
+                   <div class="dropdown-menu">
+                     <a href="#" class="dropdown-item">Hotel Booking</a>
+                     <a href="#" class="dropdown-item">Bus Booking</a>
+                     <a href="#" class="dropdown-item">Cuisines</a>
+                   </div>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Fests</a>
+                 </li class="nav-item">
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                 </li>
+              </ul>
+            </div>  
+         </div>
+    </nav>
 
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-					<h6>Copyright &copy; 2013 {Manu}</h6>
-					</div> <!-- end col-sm-2 -->
-					<div class="col-sm-4">
-						<h6>About Us</h6>
-						<p>The Himachal Pradesh Tourism Development Corporation has acted as a catalyst, trendsetter and a prime mover for the promotion of domestic and foreign tourism in Himachal Pradesh.</p>
-					</div> <!-- end col-sm-4 -->
+         	        
 
-					<div class="col-sm-2">
-						<h6>Useful Links</h6>
-						<ul class="unstyled">
-							<li><a href="">Cancellation/Refunds</a></li>
-							<li><a href="">Tenders</a></li>
-							<li><a href="">Feedback</a></li>
-							<li><a href="">RTI</a></li>
-						</ul>
-					</div> <!-- end col-sm-2 -->
+	 <div class="row" id="featureHeading">
 
-					<div class="col-sm-2">
-						<h6>Follow Us</h6>
-						<ul class="unstyled">
-							<li><a href="#">Twitter</a> <a href="#" class="fa fa-twitter"></a></li>
-	                        <li><a href="#">Facebook</a><a href="#" class="fa fa-facebook"></a></li>
-	                        <li><a href="#">Google Plus</a><a href="#" class="fa fa-google"></a></li>
-						</ul>
-					</div> <!-- end col-sm-2 -->					
+		<div class="col-12"> 
+						
+			<h2> Famous hotels in himachal </h2>
 
-					<div class="col-sm-2">
-						<h6>Coded with<span class="glyphicon glyphicon-heart"></span>by Manu</h6>
-					</div> <!-- end col-sm-2 -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</footer>
+		</div> <!-- Ending of col-12 div -->
+ 	</div><!-- end of featureHeading -->
 
-	
+   	<div class="card-deck" >
+			<div class="card">
+			  <img class="card-img-top" src="images/the-palace-chail.jpg" alt="ABD" >
+					 <div class="card-body">
+					<h4 class="card-title">The Palace ,Chail</h4>
+						<p class="card-text">Built in 1891, the Maharaja’s palace is set in approximately 75 acres and has a truly regal setting with spectacular views. A wide variety of cottages, suites and rooms with different tariffs can accommodate every visitor who wish to savor this majestic hill station.One of the best places to stay and enjoy the scenic beauty of the himalayas.</p>
+						
+					  <a href="#" class="btn btn-primary">See Profile</a>
+					 </div>
+            </div>
 
-	<!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
-	
+            <div class="card">
+			  <img class="card-img-top" src="images/the-tea-bud-palampur.jpg" alt="Gilchrist" >
+					 <div class="card-body">
+					<h4 class="card-title">The Tea Bud ,Palampur</h4>
+						<p class="card-text"> The appropriately named hotel, The Tea Bud is run by Himachal Tourism at Palampur. In the finest part of town, with lush tea gardens just opposite, is the hotel. It has deodar and pine trees, the red-brick building is a heaven for those who seek solitude and privacy.One of the best hotels in the north awaits your presence.
+            		            </p>
+					  <a href="#" class="btn btn-primary">See Profile</a>
+					 </div>
+            </div>
+
+            <div class="card">
+			  <img class="card-img-top" src="images/the-castle-naggar.jpg" alt="SRT">
+					 <div class="card-body">
+					<h4 class="card-title">The Castle ,Naggar</h4>
+						<p class="card-text">The Castle was converted into a rest house, a hundred year back and in 1978 this ancient building was handed over to HPTDC. This medieval Castle was built by Raja Sidh Singh of Kullu around 1460 A.D. The hotel overlooks the Kullu Valley and has a flavour of authentic western Himalayan architecture.</p>
+					  <a href="#" class="btn btn-primary">See Profile</a>
+					 </div>
+            </div>
+    </div>
+
+
+
+	<hr>
+	<br>
+	<hr>
+
+		<div class="carousel slide" id="myCarousel" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel" > </li>
+				<li data-slide-to="1" data-target="#myCarousel" ></li>
+				<li data-slide-to="2" data-target="#myCarousel" ></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active" id="slide1">
+					
+				</div> <!-- end of item -->
+
+				<div class="carousel-item" id="slide2">
+					
+				</div> <!-- end of item -->
+
+				<div class="carousel-item" id="slide3">
+					
+				</div> <!-- end of item -->
+			</div> <!-- end of carousel inner -->
+
+			<!-- Controls -->
+			<a class="carousel-control-prev" data-slide="prev" href="#myCarousel"><span class="carousel-control-prev-icon"></span></a>
+			<a class="carousel-control-next" data-slide="next" href="#myCarousel"><span class="carousel-control-next-icon"></span></a>
+
+		</div><!-- end of My Carousel -->
+
+
+				    
+    	<h3>Famous festivals of Himachal Pradesh</h3>
+    	<br>			    	
+    	<div class="d-flex">
+    		<a href="#" class="p-2 bg-success">
+    			<h4 > Kullu Dussehra</h4>
+    			<br>
+    			<p > Kullu Dussehra is the renowned International Mega Dussehra festival observed in the month of October in Himachal Pradesh state in northern India. Wherein more than 4-5 lac people visits the fair from all across the Globe. It is celebrated in the Dhalpur maidan in the Kullu valley. Dussehra at Kullu commences on the tenth day of the rising moon, i.e. on 'Vijay Dashmi' day itself and continues for seven days. Its history dates back to the 17th century when local King Jagat Singh installed an idol of Raghunath on his throne as a mark of penance. After this, god Raghunath was declared as the ruling deity of the Valley.</p><hr>
+    		</a>
+    		<a href="#" class="p-2 bg-info">
+    			<h4 >International Himalayan Festival </h4>
+    			<br>
+    			<p >Himalayan Blues Festival Genre	Blues, Nepali rock with blues flavor
+					Dates	Around September–November Location(s)	Kathmandu, Nepal
+					Years active	2007–2014 Website				http://www.himalayanblues.com Himalayan Blues Festival is an annual international music festival showcasing live performances followed by cultural events. Since its inception in 2007, The Himalayan Blues Festival has featured a diverse range of blues artist from around the globe and has helped introduce blues music in Nepal and the region.In its recent incarnation the festival has expanded to other cities in South Asia. </p><hr>
+    		</a>
+    		
+    	</div> <!-- end of d flex -->
+	</div>
+			    
+	<footer>
+    	<div class="container" >
+    		<div class="row footy">
+				<div class="col-4"><!--changed to col-4-->
+										
+				</div> 
+
+				<div class="col-4 ">
+					<h3>Himachal Tourism</h3>
+ 					<p><strong>For more info</strong><br>
+		             contact:+91-1234567890<br>
+		              email:sss@gmail.com</p>
+		            <a href="#" class="fa fa-facebook"></a>
+		            <a href="#" class="fa fa-twitter"></a>
+		            <a href="#" class="fa fa-youtube"></a>
+					</p>
+				</div> <!-- end of col-4 -->
+					
+															
+			</div> <!-- end of row -->
+		</div> <!-- end of container -->
+
+	</footer>
+
+			<!-- All Javascript at the bottom of the page for faster page loading -->
+				
+			<!-- First try for the online version of jQuery-->
+			<script src="http://code.jquery.com/jquery.js"></script>
+			
+			<!-- If no online access, fallback to our hardcoded version of jQuery -->
+			<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+			
+			<!-- Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			
+			<!-- Custom JS -->
+			<script src="includes/js/script.js"></script>
+			
 	</body>
 </html>
-

@@ -5,7 +5,7 @@ My Custom CSS
 
 Author:  Brad Hussey
 Updated: August 2013
-Notes:    Hand coded for Udemy.com
+Notes:	 Hand coded for Udemy.com
 
 */
 
@@ -13,167 +13,150 @@ Notes:    Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-#features {
-   text-align: center;
+
+
+#logo{
+   width:100px;
 }
 
-#features img {
-   margin :0 0 20px;
-}
 
-#inputMessage {
-   margin-bottom: 15px;
-}
 
-footer {
-   background: #333;
-   color: #eee;
-   font-size: 11px;
-   padding: 20px;
-}
+footer
+{
+  text-align:center;margin-top: 50px;
+  background-color:black ;
+  color:red;}
 .fa {
- padding: 0px;
- font-size: 10px;
- width: 20px;
- text-align: center;
- text-decoration: none;
- margin: 5px 2px;
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align:center;
+   text-decoration: none;
+
 }
-fa-twitter {
- background: #55ACEE;
- color: white;
+.fa-facebook {
+   background: #3B5998;
+   color: white;
+   border-radius:50%;
+   width:20px;
+}
+
+
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
+  
+    border-radius:50%;
+    width:20px;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius:50%;
+  width:20px;
+}
+
+ul.unstyled{
+   list-style: none;
+   padding: 0px;
+
 }
 /* --------------------------------------
    Typography
    -------------------------------------- */
-body {
-   -webkit-font-smoothing :antialiased;
+body{
+   -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
-   font-family: 'Acme', sans-serif;
 }
-.well .page-header {
+
+
+  .carousel-item{
+   height:500px;
+  
+   }
+
+     #slide1 {
+       background: url('../../images/Banner-img-05-medium.jpg') top center no-repeat;
+    }
+    #slide2 {
+       background: url('../../images/Banner-img-04-medium.jpg') top center no-repeat;
+    }
+    #slide3 {
+       background: url('../../images/Banner-img-03-medium.jpg') top center no-repeat;
+    }
+
+.well .page-header h1{
    margin-top: 0;
 }
 
-.well .page-header h1 {
-   margin-top: 0;
+p{
+  font-family:'Sofia',cursive;
+}
+#sachin
+{
+    height:256px;
+}
+.footy
+{
+    background-color:black;
+}
+footer h3{
+    color:white;
 }
 
-ul.unstyled {
-   list-style: none;
-   padding :0;
-}
+footer p
+{ color:yellow; }
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-.navbar{
-   background-color: white ;
-   min-height: 40px;
+
+.navbar-brand{
+   padding:0px;
+   float:left;
+   background-color:white;
+}  
+.nav{
+   background-color:white;
 }
-#searchInput {
-   width: 200px;
+.container{
+   background-color:white;
+   color:black;
+} 
+#featureHeading
+{
+    text-transform:uppercase;
 }
-.navbar-brand {
-   padding: 0;
+.collapse{
+   background-color:white;
 }
 
-/*
-.navbar li.active ,li.dropdown{
-   padding-top: 50px;
-}
-.navbar-form{
-   padding-top: 50px;
-}
-*/
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-
-#myCarousel {
-   margin-top: 60px;
-}
-
-.carousel-caption {
-   font-size: 24px;
-}
-
-.carousel-caption h4 {
-   font-size: 32px;
-}
-#myCarousel .item { height: 400px; }
-#slide1 {
-   background: url('../../images/Banner-img-05-medium.jpg') top center no-repeat;
-}
-#slide2 {
-   background: url('../../images/Banner-img-04-medium.jpg') top center no-repeat;
-}
-#slide3 {
-   background: url('../../images/Banner-img-03-medium.jpg') top center no-repeat;
-}
 
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-.alert {
-   margin-top: 20px;
+.alert{
+   margin-top: 0px;
    display: none;
 }
-
-.well {
-   margin :20px 0px; 
+.well{
+   margin: 20px 0;
 }
 
-.tabbable img.thumbnail {
-   margin :0 20px 10px 0;
+.tabbable img.thumbnail{
+   margin : 0 20px 10px 0;
 }
 
-.thumbnails {
-   margin :20px 0;
-}
 
-.thumbnail {
-   position: relative;
-}
-
-.thumbnail h3 {
-   font-size: 16px;
-   margin: 0 0 10px;
-   line-height: 20px;
-}
-
-.thumbnail .price {
-   font-size: 22px;
-   position: absolute;
-   top: -10px;
-   right: -10px;
-   padding: 10px;
-}
-
-.thumbnail .price sup {
-   font-weight: normal;
-   font-size: 12px;
-}
-
-.thumbnail span.glyphicon {
-   margin-right: 5px;
-}
-
-.well h1{
-   font-size: 40px;
-}
-h1,h2,h3,h4,h5,h6{
-   font-family: 'Lobster', cursive;
-}
-
-#featuresHeading {
-   margin-top: -30px;
-}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
+/* Landscape phone to portrait tablet */
 
-/* Portrait & landscape phone */
+/* Landscape phone to portrait tablet */
 @media (max-width: 480px) {
 
    .thumbnail .price {
